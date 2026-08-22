@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxwell Felgueiras — Work</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem("theme");
+    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="head-inner">
+    <div class="brand">
+      <a href="index.html" class="wordmark">Maxwell Felgueiras<span class="dot">.</span></a>
+      <span class="locale">Aveiro, PT — b. Rio de Janeiro, BR</span>
+    </div>
+    <div class="head-right">
+      <button class="theme-toggle" aria-label="Toggle light/dark theme">☾ Dark</button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰ Menu</button>
+    </div>
+    <nav class="tabs">
+      <a href="index.html" class="tab">Home</a>
+      <a href="cv.html" class="tab">CV</a>
+      <a href="writing.html" class="tab">Notes</a>
+      <a href="projects.html" class="tab is-active">Work</a>
+      <!-- SHOP-NAV-START -->
+      <a href="shop.html" class="tab">Shop</a>
+      <!-- SHOP-NAV-END -->
+    </nav>
+  </div>
+</header>
+
+<main class="sheet">
+
+  <span class="wave-divider"><svg viewBox="0 0 400 14" preserveAspectRatio="none"><path d="M0 7 C 20 0, 30 14, 50 7 S 80 0, 100 7 S 130 14, 150 7 S 180 0, 200 7 S 230 14, 250 7 S 280 0, 300 7 S 330 14, 350 7 S 380 0, 400 7"/></svg></span>
+
+  <section class="hero">
+    <span class="eyebrow">Portfolio</span>
+    <h1>Projects</h1>
+    <p class="lede">Work across aerospace, robotics, and applied AI. One line each on what it is and why it exists.</p>
+  </section>
+
+  <!-- Duplicate a .project-card block for each project -->
+  <div class="project-grid">
+
+    <div class="project-card">
+      <h3>Aerospace project</h3>
+      <p>A short description: what the project was, your role, and what tools or methods you used.</p>
+      <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Robotics project</h3>
+      <p>Same idea — what it does, and who it was for or what problem it solved.</p>
+      <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Applied AI project</h3>
+      <p>Keep it to one or two sentences — the link is where people go to see more.</p>
+      <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Automation project</h3>
+      <p>Add as many of these cards as you need by copying the whole block.</p>
+      <a class="proj-link" href="#" target="_blank" rel="noopener">View project →</a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <span>© 2026 Maxwell Felgueiras</span>
+  <span><a href="mailto:you@example.com">you@example.com</a></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
