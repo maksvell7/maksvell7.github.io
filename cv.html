@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxwell Felgueiras — CV</title>
+<script>
+  (function () {
+    var stored = localStorage.getItem("theme");
+    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 26 26"><circle cx="13" cy="13" r="10"/><line x1="13" y1="13" x2="13" y2="5"/><line x1="13" y1="13" x2="18" y2="13"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">Maxwell Felgueiras</span>
+        <span class="brand-locale">AVEIRO, PT · 40.64°N</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <span class="nav-indicator"></span>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="cv.html" class="nav-link is-active">CV</a>
+      <a href="writing.html" class="nav-link">Notes</a>
+      <a href="projects.html" class="nav-link">Work</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light/dark theme">☾ Dark</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-links">
+    <a href="index.html">Home</a>
+    <a href="cv.html" class="is-active">CV</a>
+    <a href="writing.html">Notes</a>
+    <a href="projects.html">Work</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero hero-anim">
+    <span class="eyebrow">Spec Sheet</span>
+    <h1>CV</h1>
+    <svg class="horizon" viewBox="0 0 600 34" preserveAspectRatio="none"><path d="M0 20 C 40 4, 60 36, 100 20 S 160 4, 200 20 S 260 36, 300 20 S 360 4, 400 20 S 460 36, 500 20 S 560 4, 600 20"/></svg>
+    <p class="lede">Mechanical engineer, specialized in automation — aerospace, robotics, and AI.</p>
+  </section>
+
+  <section class="section reveal">
+    <h2>Education</h2>
+
+    <div class="ledger-row">
+      <div class="ledger-date">[Year] — [Year]</div>
+      <div>
+        <p class="ledger-role">Integrated Master's, Mechanical Engineering — Automation</p>
+        <p class="ledger-org">Faculty of Engineering, University of Porto (FEUP)</p>
+        <p>Specialized in automation, with project work spanning aerospace systems, robotics, and applied AI. Replace this with your thesis title or focus area.</p>
+      </div>
+    </div>
+
+    <div class="ledger-row">
+      <div class="ledger-date">[Year] — [Year]</div>
+      <div>
+        <p class="ledger-role">Bachelor's, Mechanical Engineering</p>
+        <p class="ledger-org">Faculty of Engineering, University of Porto (FEUP)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h2>Experience</h2>
+
+    <div class="ledger-row">
+      <div class="ledger-date">[Year] — Now</div>
+      <div>
+        <p class="ledger-role">Job Title</p>
+        <p class="ledger-org">Company Name, City</p>
+        <p>What you actually did, and the outcome. Duplicate this whole <code>.ledger-row</code> block for each role.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h2>Skills</h2>
+    <div class="chip-row">
+      <span class="chip">Automation</span>
+      <span class="chip">Robotics</span>
+      <span class="chip">Aerospace systems</span>
+      <span class="chip">Applied AI</span>
+      <span class="chip">CAD</span>
+      <span class="chip">Portuguese</span>
+      <span class="chip">English</span>
+    </div>
+    <p class="print-note">Want a PDF? Print this page (Cmd/Ctrl + P → Save as PDF) — it's built to print cleanly.</p>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <span>© 2026 Maxwell Felgueiras</span>
+  <span><a href="mailto:you@example.com">you@example.com</a></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

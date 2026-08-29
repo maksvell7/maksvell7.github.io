@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maxwell Felgueiras — Home</title>
+<meta name="description" content="Maxwell Felgueiras — mechanical engineer, automation, aerospace, robotics & AI. Aveiro, Portugal.">
+<script>
+  (function () {
+    var stored = localStorage.getItem("theme");
+    var dark = stored ? stored === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+  })();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 26 26"><circle cx="13" cy="13" r="10"/><line x1="13" y1="13" x2="13" y2="5"/><line x1="13" y1="13" x2="18" y2="13"/></svg>
+      <span class="brand-text">
+        <span class="brand-name">Maxwell Felgueiras</span>
+        <span class="brand-locale">AVEIRO, PT · 40.64°N</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <span class="nav-indicator"></span>
+      <a href="index.html" class="nav-link is-active">Home</a>
+      <a href="cv.html" class="nav-link">CV</a>
+      <a href="writing.html" class="nav-link">Notes</a>
+      <a href="projects.html" class="nav-link">Work</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle light/dark theme">☾ Dark</button>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-links">
+    <a href="index.html" class="is-active">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="writing.html">Notes</a>
+    <a href="projects.html">Work</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero hero-anim">
+    <span class="eyebrow">Mechanical Engineer · Automation</span>
+    <h1>Hi, I'm Maxwell.</h1>
+    <svg class="horizon" viewBox="0 0 600 34" preserveAspectRatio="none"><path d="M0 20 C 40 4, 60 36, 100 20 S 160 4, 200 20 S 260 36, 300 20 S 360 4, 400 20 S 460 36, 500 20 S 560 4, 600 20"/></svg>
+    <p class="lede">I work across aerospace, robotics, and AI — with a soft spot for Portuguese and Atlantic aesthetics.</p>
+  </section>
+
+  <section class="section reveal">
+    <p>
+      I was born in Rio de Janeiro, Brazil, studied mechanical engineering at
+      FEUP in Porto, and I'm now based in Aveiro, Portugal — close enough to
+      the Atlantic to still feel it in most of what I do. This site is where
+      I keep my CV, notes, and projects in one place.
+    </p>
+  </section>
+
+  <section class="section reveal">
+    <h2>Where to go from here</h2>
+    <div class="card-grid">
+      <a href="cv.html" class="quick-card">
+        <span class="eyebrow">Background</span>
+        <h3>CV</h3>
+        <p>Education, specialization, and skills.</p>
+      </a>
+      <a href="writing.html" class="quick-card">
+        <span class="eyebrow">Notes</span>
+        <h3>Notes &amp; thoughts</h3>
+        <p>Whatever's on my mind — engineering, projects, or otherwise.</p>
+      </a>
+      <a href="projects.html" class="quick-card">
+        <span class="eyebrow">Work</span>
+        <h3>Projects</h3>
+        <p>Aerospace, robotics, and AI work I've done.</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <span>© 2026 Maxwell Felgueiras</span>
+  <span><a href="mailto:you@example.com">you@example.com</a></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
